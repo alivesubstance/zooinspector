@@ -1,20 +1,7 @@
 zooinspector
 ============
 
-An improved zookeeper inspector
+For more description see parent project https://github.com/zzhang5/zooinspector
 
-- Use async operations to speed up read
-- Znodes sorted by names in tree viewer
-- Timestamp and session id in more readable format in node metadata viewer
-- Add a dropdown menu to show the last 10 successfully connected zookeeper addresses
-- Support text search in node data viewer
-- Support read-only mode for node data viewer
-
-Build
-- $git clone https://github.com/zzhang5/zooinspector.git
-- $cd zooinspector/
-- $mvn clean package
-
-Run
-- $chmod +x target/zooinspector-pkg/bin/zooinspector.sh
-- $target/zooinspector-pkg/bin/zooinspector.sh
+The aim of this fork is to use Marathon application to fetch all available ZK instances for all available env. Marathon instance defined through marathon property in connection settings. By default settings stored in 
+./src/main/resources/defaultConnectionSettings.cfg:marathon=http://marathon.dev.pleeco
